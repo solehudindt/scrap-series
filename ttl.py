@@ -16,6 +16,7 @@ def get_birth(x):
 	return birth[1]
 
 y = list()
+
 for i in nims:
 	raw_html = simple_get('http://academic.dinus.ac.id/home/data_mahasiswa/'+i)
 	html = BeautifulSoup(raw_html, 'html.parser')
@@ -30,4 +31,9 @@ for i in nims:
 	y.append(x[7].text)
 	logging.info('isi y', y)
 
-print(y)
+data = "\n".join(y)
+kelas = open("ttl.csv", "w")
+
+kelas.write(data)
+
+kelas.close()
