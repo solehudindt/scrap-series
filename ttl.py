@@ -28,7 +28,7 @@ for i in nims:
 	x = konten.findAll("td")
 	ttl = x[7].text
 	birthday = get_birth(ttl)
-	y.append(x[7].text)
+	y.append(birthday)
 	logging.info('isi y', y)
 
 data = "\n".join(y)
