@@ -12,7 +12,7 @@ with open('doscom.csv', newline='') as f:
 nims = [j for sub in data for j in sub]
 
 def get_birth(x):
-	birth = x.split(,)
+	birth = x.split(',')
 	return birth[1]
 
 y = list()
