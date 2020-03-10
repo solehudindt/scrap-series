@@ -5,7 +5,7 @@ import logging
 import csv
 
 # openf = open('doscom.csv')
-with open('doscom.csv', newline='') as f:
+with open('nims.csv', newline='') as f:
 		reader = csv.reader(f)
 		data = list(reader)
 
